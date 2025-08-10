@@ -1,0 +1,35 @@
+Diabetes Prediction using Logistic Regression
+This project predicts whether a patient has diabetes based on medical attributes such as glucose level, BMI, age, and more.
+It uses Logistic Regression for classification and handles missing/invalid values before training.
+
+Dataset
+Source: diabetes.csv (Pima Indians Diabetes Dataset)
+
+Target column: Outcome
+1 → Diabetic
+0 → Non-diabetic
+
+Features:
+Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
+
+Features of the Code
+Data Cleaning
+Replaces 0 values in numeric features with their respective column mean.
+Preserves the target column (Outcome) during preprocessing.
+Data Splitting
+Uses train_test_split with stratify to keep class distribution balanced.
+
+Model Training
+Logistic Regression from sklearn.linear_model.
+Evaluates accuracy on both training and test data.
+Evaluation Metrics
+Accuracy score
+Classification report (Precision, Recall, F1-score)
+Confusion matrix
+
+Requirements
+->Python 3.7+
+->pandas
+->numpy
+->scikit-learn
+->matplotlib (optional, for visualizations)
